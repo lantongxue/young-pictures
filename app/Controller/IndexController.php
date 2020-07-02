@@ -142,7 +142,7 @@ class IndexController extends AbstractController
 
     public function browse()
     {
-        $list = ImageList::query()->orderBy('pv', 'desc')->orderBy('create_time', 'desc')->paginate(20, ['create_time', 'name', 'code']);
+        $list = ImageList::query()->orderBy('create_time', 'desc')->orderBy('pv', 'desc')->paginate(20, ['create_time', 'name', 'code']);
         $domain = config('domain');
         foreach ($list as &$item)
         {
