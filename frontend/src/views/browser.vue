@@ -40,7 +40,7 @@ export default {
   data () {
     return {
       image_list: [],
-      current_page: 0,
+      current_page: 1,
       last_page: 0,
       has_more_page: true
     }
